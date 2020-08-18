@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> E-COMMERCE Servicios </title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Diseño4v.css')}}">
+</head>
+
+<body>
+	<header>
+		<h2> Tienda Online </span></h2>
+		<a href="/sesion" class=""> Registrarte / Iniciar Sesion </a>
+	</header>
+ 
+    <div class="contenedor">
+    	<div class="primera">
+    		<a href="/m1">
+            <div class="pro1">
+    		<img src="{{url_for('static',filename='imagenes/m1.jpg')}}">
+            <h3>Carlos Ornelas</h3>
+            <p>Maestro Ingles Avanzado</p>
+    	    </div> </a>
+    	    <a href="/m2">
+            <div class="pro2">
+    		<img src="{{url_for('static',filename='imagenes/m2.jpg')}}">
+            <h3>Pablo Hernández</h3>
+            <p>Maestro Aleman Intermedio</p>
+    		</div> </a>
+            <a href="/m3"> 
+    		<div class="pro3">
+    		<img src="{{url_for('static',filename='imagenes/m3.jpg')}}">
+            <h3>Cristina Aguirre</h3>
+            <p>Maestra Ingles Principiante</p>
+    		</div> </a>
+    	</div>
+
+    	<div class="segunda"> 
+            <a href="/m4">
+    	    <div class="pro4">
+    		<img src="{{url_for('static',filename='imagenes/m4.jpg')}}">
+            <h3>Claudia Pérez</h3>
+            <p>Maestra Frances intermedio</p>
+    	    </div> </a>
+            <a href="/m5">
+    	    <div class="pro5">
+    		<img src="{{url_for('static',filename='imagenes/m6.jpg')}}">
+            <h3>Adrian González</h3>
+            <p>Maestro Ingles Principiante</p>
+    		</div> </a>
+            <a href="/m6">
+    		<div class="pro6">
+    		<img src="{{url_for('static',filename='imagenes/m5.jpg')}}">
+            <h3>María Gómez</h3>
+            <p>Maestra Español avanzado</p>
+    		</div> </a>
+        </div>
+    </div>
+
+    <div class="arriba">
+        <a href="/servicios"><button>Inicio de Página</button></a>
+    </div>
+    <div class="es"> E </div>
+    <div class="pie">
+        <p> 2020, Systeg.mx. Todos los derechos reservados. </p>
+    </div>
+
+</body>
+</html>

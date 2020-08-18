@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> E-COMMERCE Productos </title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Diseño4.css')}}">
+</head>
+
+<body>
+	<header>
+		<h2> Tienda Online </span></h2>
+		<a href="/sesion" class=""> Registrarte / Iniciar Sesion </a>
+	</header>
+ 
+    <div class="container">
+    	<div class="primera">
+    		<a href="/p1">
+            <div class="pro1">
+    		<img src="{{url_for('static',filename='imagenes/goi2.jpg')}}">
+            <h3>Gorra color rojo Astros</h3>
+            <p>$400</p>
+    	    </div> </a>
+    	    <a href="/p3">
+            <div class="pro2">
+    		<img src="{{url_for('static',filename='imagenes/p1.jpg')}}">
+            <h3>Playera color sólido negra</h3>
+            <p>$250</p>
+    		</div> </a>
+            <a href="/p4"> 
+    		<div class="pro3">
+    		<img src="{{url_for('static',filename='imagenes/za.jpg')}}">
+            <h3>Zapatos de vestir color azul</h3>
+            <p>$1500</p>
+    		</div> </a>
+    	</div>
+
+    	<div class="segunda"> 
+            <a href="/p5">
+    	    <div class="pro4">
+    		<img src="{{url_for('static',filename='imagenes/p2.jpg')}}">
+            <h3>Playera color sólido gris</h3>
+            <p>$250</p>
+    	    </div> </a>
+            <a href="/p2">
+    	    <div class="pro5">
+    		<img src="{{url_for('static',filename='imagenes/s2.jpg')}}">
+            <h3>Shorts deportivos negros para dama</h3>
+            <p>$1200</p>
+    		</div> </a>
+            <a href="/p6">
+    		<div class="pro6">
+    		<img src="{{url_for('static',filename='imagenes/su.jpg')}}">
+            <h3>Sudadera color negro</h3>
+            <p>$800</p>
+    		</div> </a>
+        </div>
+
+    	<div class="tercera">
+    		<a href="/p7">
+            <div class="pro7">
+    		<img src="{{url_for('static',filename='imagenes/go.jpg')}}">
+            <h3>Gorra color negro solido</h3>
+            <p>$400</p>
+    	    </div> </a>
+    	    <a href="/p8">
+            <div class="pro8">
+    		<img src="{{url_for('static',filename='imagenes/s.jpg')}}">
+            <h3>Bermudas para caballero</h3>
+            <p>$600</p>
+    		</div> </a>
+            <a href="/producto"> 
+    		<div class="pro9">
+    		<img src="{{url_for('static',filename='imagenes/2.jpg')}}">
+            <h3>Tenis adidas color negro</h3>
+            <p>$1000</p> 
+    		</div> </a>
+    	</div>
+
+    	<div class="cuarta"> 
+            <a href="/p9">
+    	    <div class="pro10">
+    		<img src="{{url_for('static',filename='imagenes/pan.jpg')}}">
+            <h3>Pantalones para Dama</h3>
+            <p>$750</p>
+    	    </div> </a>
+            <a href="/p10">
+    	    <div class="pro11">
+    		<img src="{{url_for('static',filename='imagenes/1.jpg')}}">
+            <h3>Tenis Nike Airmax</h3>
+            <p>$1250</p>
+    		</div> </a>
+            <a href="/p11">
+    		<div class="pro12">
+    		<img src="{{url_for('static',filename='imagenes/cal2.jpg')}}">
+            <h3>Tres Pares de Calcetines Negros</h3>
+            <p>$400</p>
+    		</div> </a>
+    	</div>
+    	</div>
+    </div>
+
+    <div class="arriba">
+        <a href="/productos"><button>Inicio de Página</button></a>
+    </div>
+    <div class="es"> E </div>
+    <div class="pie">
+        <p> 2020, Systeg.mx. Todos los derechos reservados. </p>
+    </div>
+
+</body>
+</html>

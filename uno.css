@@ -1,0 +1,115 @@
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+ * {
+ 	font-family: 'Raleway', sans-serif;
+ 	box-sizing: border-box;
+ 	text-decoration: none;
+ 	list-style-type: none;
+ 	padding: 0;
+ 	margin: 0;
+ }
+
+ body {
+ 	background: #f4f5f9;
+ }
+
+ header {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	height: 80px;
+ 	align-items: center;
+ 	padding: 0rem 3.5rem;
+ 	color: #6a6b6d;
+ 	margin-bottom: 1em;
+ 	width: 100%;
+ }
+
+ header h2 {
+ 	font-size: 2rem;
+ 	width: 21%;
+ 	float: left;
+ 	display: inline-block;
+ }
+
+header a {
+	color: #6a6b6d;
+	font-weight: 600;
+	display: inline-block;
+	float: right;
+}
+
+header a:hover {
+	color: grey;
+}
+
+body {
+	height: 100%;
+}
+
+.centro {
+	width: 100%;
+	min-height: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+form.Buscar {
+	width: 30%;
+	background: #fff;
+}
+
+form.Buscar input {
+	height: 70px;
+	outline: none;
+	background: none;
+	border: none;
+	border-left: #6a6b6d 2px solid;
+}
+
+form.Buscar input {
+	width: 100%;
+	padding: 0rem 1rem;
+}
+
+input.busqueda::placeholder {
+	text-align: center;
+	font-size: 20em;
+}
+
+.arriba button {
+	width: 100%;
+	height: 3em;
+	background-color: #6a6b6d;
+	color: #fff;
+	border: none;
+}
+
+.arriba button:hover {
+	background-color: grey;
+}
+
+.es {
+	width: 100%
+	height: 10em;
+	background-color: #6a6b6d;
+	color: #6a6b6d;
+}
+
+.pie {
+	width: 100%;
+	height: 2em;
+	background-color: #6a6b6d;
+}
+
+.pie p {
+	color: black;
+	text-align: center;
+	font-size: 12px;
+}
+
+footer {
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+}

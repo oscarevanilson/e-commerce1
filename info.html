@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{usuario}}</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Diseño5.css')}}">
+</head>
+<body>
+	<header>
+		<center><h2> Tienda Online </h2></center>
+	</header>
+
+	<center><div class="cuadro">
+	<h1>Nombre: {{nombre}}</h1>
+	<hr>
+	<h1>Apellidos: {{apellidos}}</h1>
+    </div></center>	
+    <center><a href="http://127.0.0.1:2000/cerrar"><button class="boton">Cerrar Sesion</button></a></center>
+
+
+    <footer>
+	<div class="arriba">
+    	<a href="/usuario"><button>Inicio de Página</button></a>
+    </div>
+    <div class="es"> E </div>
+    <div class="pie">
+    	<p> 2020, Systeg.mx. Todos los derechos reservados. </p>
+    </div>
+    </footer>
+
+</body>
+</html>

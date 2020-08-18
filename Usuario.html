@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> E-COMMERCE {{usuario}} </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='uno.css')}}">
+</head>
+
+<body>
+    <header>
+        <h2> Tienda Online </h2>
+        <a href="/usuario" class=""> Hola {{usuario}} </a>
+    </header>
+
+    <div class="centro">
+        <form class="Buscar" method="post" action="http://127.0.0.1:2000">
+            <input type="search" name="busqueda" placeholder="Ingresa el codigo de obtenido"/>
+    </form>
+    </div>
+
+    <footer>
+    <div class="arriba">
+        <a href="/"><button>Inicio de Página</button></a>
+    </div>
+    <div class="es"> E </div>
+    <div class="pie">
+        <p> 2020, Systeg.mx. Todos los derechos reservados. </p>
+    </div>
+    </footer>
+</body>
+</html>

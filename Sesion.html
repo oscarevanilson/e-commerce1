@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> E-COMMERCE Iniciar Sesión </title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+	<link rel="stylesheet" href="{{ url_for('static',filename='Diseño2.css')}}">
+</head>
+<body>
+	<header>
+		<h2> Tienda Online </h2>
+	</header>
+
+	<form class="formulario" method="post" action="http://127.0.0.1:2000/sesion">
+		<h3>Inicio de Sesión</h3>
+		<input type="" name="usuario" placeholder="Correo Electrónico">
+		<input type="password" name="contraseña" placeholder="Contraseña">
+		<a href=""><button class="continuar">Continuar</button></a>
+		{% with messages = get_flashed_messages() %}
+		{% if messages %}
+		{% for msg in messages %}
+		<center><p class="flash">{{msg}}</p></center>
+		{% endfor %}
+		{% endif %}
+		{% endwith %}
+		<p>
+			<strong>Al continuar, aceptas nuestros términos y condiciones de uso en nuestra página.</strong>
+		</p>
+	</form>
+	<div class="crear">
+		<p>
+			¿No tienes cuenta?
+		</p>
+		<a href="/crear"><button>Crea tu Cuenta</button></a>
+	</div>
+	<div class="pie">
+		<hr>
+		<p>
+			2020, Systeg.mx. Todos los derechos reservados.
+		</p>
+	</div>
+</body>
+</html>

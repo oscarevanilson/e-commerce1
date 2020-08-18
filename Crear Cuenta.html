@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> E-COMMERCE Registro </title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+	<link rel="stylesheet" href="{{ url_for('static',filename='Diseño3.css')}}">
+</head>
+<body>
+	<header>
+		<h2> Tienda Online </h2>
+	</header>
+
+	<form class="formulario" method="post" action="http://127.0.0.1:2000/crear">
+		<h3>Crear Cuenta</h3>
+		<input type="" name="nombre" placeholder="Nombre">
+		<input type="" name="apellido" placeholder="Apellidos">
+		<input type="" name="correo" placeholder="Correo Electrónico">
+		<input type="" name="telefono" placeholder="Telefono">
+		<input type="password" name="contraseña" placeholder="Contraseña (8 caracteres minimos)">
+		<input type="password" name="confirmar" placeholder="Confirma tu Contraseña">
+		<a href="Pagina.html"><button class="continuar" type="submit">Crear Cuenta</button></a>
+		<hr>
+		<div class="sesion">	
+		{% with messages = get_flashed_messages() %}
+		{% if messages %}
+		{% for msg in messages %}
+		<center><p class="flash2">{{msg}}</p></center>
+		{% endfor %}
+		{% endif %}
+		{% endwith %}	
+		<p>
+			<strong>Al continuar, aceptas nuestros términos y condiciones de uso en nuestra página.</strong>
+		</p>
+		<p class="sesion">¿Ya tienes una cuenta?</p><a href="/sesion"> Inicia Sesion </a>
+	    </div>
+	</form>
+	<div class="pie">
+		<hr>
+		<p>
+			2020, Systeg.mx. Todos los derechos reservados.
+		</p>
+	</div>
+</body>
+</html>
