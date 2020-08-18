@@ -295,14 +295,6 @@ def m6():
 if __name__ == '__main__':
 	app.run(port = 2000, debug = True)
 
-
-#cur.execute("delete from infor where nombre = '%s'", (nom))
-#print("Datos Eliminados")
-
-#for r in rows:
-#	print (f"Nombre: {r[0]} Apellido: {r[1]} Correo: {r[2]} Telefono: {r[3]} Contraseña: {r[4]}")
-
-
 con.commit()
 
 cur.close()
